@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-28c36b01"],{4461:function(t,n,c){},7262:function(t,n,c){"use strict";c("4461")},c3ea:function(t,n,c){"use strict";c.r(n);var e=function(){var t=this,n=t._self._c;return n("section",{staticClass:"section has-text-centered",attrs:{id:"tic-container"}},[n("iframe",{attrs:{src:"/tic80/index.html"}})])},s=[],i={name:"Tick80",components:{}},a=i,o=(c("7262"),c("2877")),r=Object(o["a"])(a,e,s,!1,null,"5a0c65e2",null);n["default"]=r.exports}}]);
-//# sourceMappingURL=chunk-28c36b01.28d704c0.js.map
