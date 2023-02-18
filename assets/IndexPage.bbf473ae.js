@@ -1,1 +1,0 @@
-import{Q as e}from"./QPage.43b4781e.js";import{_ as a}from"./plugin-vue_export-helper.21dcd24c.js";import{D as r,E as t,F as o,a9 as s}from"./index.1b03291b.js";const c={};function n(f,_){return r(),t(e,{class:"items-center justify-evenly row"},{default:o(()=>[s(" Ragnarok Tools ")]),_:1})}var d=a(c,[["render",n]]);export{d as default};
