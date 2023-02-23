@@ -1,0 +1,1 @@
+import{aE as e}from"./index.715e6539.js";const l=e("server",{state:()=>({servers:[{label:"Default",value:"Default"},{label:"ProjectAlfheim",value:"ProjectAlfheim"}],server:{label:"ProjectAlfheim",value:"ProjectAlfheim"}})});export{l as u};
