@@ -1,0 +1,1 @@
+import{Q as e}from"./QPage-D_x4cdux.js";import{_ as r}from"./GH-plugin-vue:export-helper-DlAUqK2U.js";import{k as o,n as t}from"./index-BtQtmZ5c.js";const c={};function s(n,a){return t(),o(e,{class:"row items-center justify-evenly"})}const i=r(c,[["render",s]]);export{i as default};
