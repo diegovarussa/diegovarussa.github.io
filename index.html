@@ -623,10 +623,14 @@
       }
 
       /* skill-group and exp-list need flex/grid re-applied */
-      body.lang-pt .skills-grid [data-lang='pt'],
-      body.lang-pt .exp-list [data-lang='pt'],
-      body.lang-pt .langs-row [data-lang='pt'],
-      body.lang-pt .lead-card [data-lang='pt'] {
+      body.lang-pt .skills-grid[data-lang='pt'],
+      body.lang-pt .exp-list[data-lang='pt'],
+      body.lang-pt .langs-row[data-lang='pt'],
+      body.lang-pt .lead-card[data-lang='pt'] {
+        display: flex;
+      }
+
+      body.lang-pt .section-title[data-lang='pt'] {
         display: flex;
       }
 
