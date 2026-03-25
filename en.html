@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATS Gold Standard Resume - Diego Varussa Pereira</title>
+    <style>
+      :root {
+        --primary-color: #000000;
+        --accent-color: #003366;
+        --text-main: #222222;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4;
+        color: var(--text-main);
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0;
+      }
+
+      .resume-container {
+        width: 210mm;
+        margin: 0 auto;
+        background: white;
+        padding: 12mm 15mm;
+      }
+
+      header {
+        text-align: left;
+        border-bottom: 2px solid var(--primary-color);
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 22pt;
+        color: var(--primary-color);
+      }
+      .tagline {
+        font-size: 13pt;
+        color: var(--accent-color);
+        font-weight: bold;
+        margin-top: 2px;
+      }
+
+      .contact-bar {
+        display: flex;
+        justify-content: flex-start;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 8px;
+        font-size: 10pt;
+      }
+
+      .contact-bar a {
+        color: var(--text-main);
+        text-decoration: none;
+      }
+
+      h2 {
+        font-size: 12pt;
+        color: var(--primary-color);
+        border-bottom: 1px solid #000;
+        padding-bottom: 2px;
+        margin-top: 15px;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+      }
+
+      .summary-text {
+        font-size: 9.8pt;
+        margin-bottom: 8px;
+        text-align: justify;
+      }
+
+      .exp-item {
+        margin-bottom: 12px;
+      }
+      .exp-header {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 10.5pt;
+      }
+      .company-info {
+        display: flex;
+        justify-content: space-between;
+        color: var(--accent-color);
+        font-weight: bold;
+        margin-bottom: 3px;
+        font-size: 10pt;
+      }
+
+      ul {
+        padding-left: 18px;
+        margin-top: 4px;
+        font-size: 9.2pt;
+      }
+      li {
+        margin-bottom: 2.5px;
+      }
+
+      .skill-group {
+        margin-bottom: 6px;
+        font-size: 9.2pt;
+      }
+      .skill-group strong {
+        color: var(--primary-color);
+        text-transform: uppercase;
+        font-size: 8.8pt;
+      }
+
+      .page-break {
+        height: 0;
+        page-break-after: always;
+      }
+
+      @media print {
+        body {
+          padding: 0;
+        }
+        .resume-container {
+          padding: 12mm 15mm;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body itemscope itemtype="http://schema.org">
+    <div class="resume-container">
+      <header>
+        <h1 itemprop="name">Diego Varussa Pereira</h1>
+        <div class="tagline" itemprop="jobTitle">Senior Software Engineer | Full Stack & Cloud Architect</div>
+        <div class="contact-bar">
+          <span itemprop="address" itemscope itemtype="http://schema.org">
+            <span itemprop="addressLocality">Maringá</span>, <span itemprop="addressRegion">PR</span>,
+            <span itemprop="addressCountry">Brazil</span>
+          </span>
+          | <span itemprop="email">diegovarussa@gmail.com</span> |
+          <span
+            ><a href="https://www.linkedin.com/in/diegovarussa/" target="_blank" itemprop="url"
+              >linkedin.com/in/diegovarussa</a
+            ></span
+          >
+        </div>
+      </header>
+
+      <section>
+        <h2>Professional Summary</h2>
+        <div class="summary-text" itemprop="description">
+          Expert <strong>Full Stack Software Engineer</strong> with
+          <strong>14+ years of experience</strong> specializing in high-scalability web systems and
+          <strong>Cloud Native Architecture</strong>. Advanced proficiency in
+          <strong>Node.js (NestJS), TypeScript, and GraphQL</strong>. Proven track record of architecting and delivering
+          robust <strong>Microservices</strong> and interactive <strong>Single Page Applications (SPA)</strong> across
+          <strong>Amazon Web Services (AWS)</strong>, <strong>Google Cloud Platform (GCP)</strong>, and
+          <strong>Microsoft Azure</strong> for global enterprise markets.
+        </div>
+      </section>
+
+      <section>
+        <h2>Technical Skills</h2>
+        <div class="skill-group">
+          <strong>Core Languages & Frameworks:</strong> TypeScript, JavaScript (ES6+), Node.js, NestJS, GraphQL
+          (Apollo), PHP (Zend, CodeIgniter), HTML5, CSS3, Vue.js, Quasar, React, Angular.
+        </div>
+        <div class="skill-group">
+          <strong>Cloud, Infrastructure & DevOps:</strong> Amazon Web Services (<strong>AWS</strong>), Google Cloud
+          Platform (<strong>GCP</strong>), <strong>Microsoft Azure</strong>, <strong>Kubernetes (K8s)</strong>,
+          <strong>Docker</strong>, Continuous Integration/Deployment (<strong>CI/CD</strong>),
+          <strong>CircleCI</strong>, <strong>GitHub Actions</strong>, <strong>Grafana</strong>,
+          <strong>Terraform</strong>, <strong>AWS CDK</strong>.
+        </div>
+        <div class="skill-group">
+          <strong>Databases & Backend Infrastructure:</strong> <strong>MongoDB</strong>, <strong>MySQL</strong>,
+          <strong>PostgreSQL</strong>, <strong>DynamoDB</strong>, Amazon <strong>Neptune</strong> (Graph Database),
+          <strong>Prisma ORM</strong>, <strong>Redis</strong>, Virtual Private Cloud (<strong>VPC</strong>),
+          <strong>Route 53</strong>, Serverless (<strong>AWS Lambda</strong>), <strong>API Gateway</strong>,
+          <strong>ECS/Fargate</strong>.
+        </div>
+      </section>
+
+      <section>
+        <h2>Professional Experience</h2>
+
+        <div class="exp-item">
+          <div class="exp-header"><span>Senior Software Engineer</span> <span>January 2025</span> – Present</div>
+          <div class="company-info"><span>DIEGO VARUSSA PEREIRA LTDA</span> <span>Maringá, Brazil</span></div>
+          <ul>
+            <li>
+              Architect and engineer high-concurrency <strong>Application Programming Interfaces (API)</strong> using
+              <strong>NestJS, Apollo GraphQL, Prisma, and MongoDB</strong>.
+            </li>
+            <li>
+              Design and manage automated <strong>Cloud Infrastructure</strong> and <strong>DevOps</strong> pipelines on
+              <strong>Google Cloud Platform (GCP)</strong>.
+            </li>
+            <li>
+              Establish full-stack <strong>Observability</strong> and real-time performance monitoring using
+              <strong>Grafana</strong>.
+            </li>
+            <li>
+              Implement secure <strong>OAuth2</strong> authentication and responsive,
+              <strong>multilingual</strong> frontend architectures.
+            </li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header"><span>Senior Software Engineer</span> <span>July 2020 – December 2024</span></div>
+          <div class="company-info"><span>Geeklys</span> <span>Tokyo, Japan</span></div>
+          <ul>
+            <li>
+              <em>GameFi & Fintech:</em> Engineered <strong>Serverless</strong> architectures using
+              <strong>AWS Lambda</strong>, <strong>CDK</strong>, and <strong>Neptune</strong> for decentralized
+              platforms.
+            </li>
+            <li>
+              Developed automated financial <strong>Trading Analysis</strong> tools for FX and Cryptocurrency markets on
+              <strong>Ethereum</strong> and <strong>Binance Smart Chain (BSC)</strong>.
+            </li>
+            <li>
+              Built scalable <strong>Microservices</strong> and <strong>Matching Engines</strong> using
+              <strong>Node.js</strong> and <strong>TypeScript</strong>.
+            </li>
+            <li>
+              Optimized cloud security and networking protocols (<strong>VPC</strong>, <strong>Route 53</strong>,
+              <strong>WAF</strong>, <strong>App Runner</strong>, <strong>S3</strong>) on <strong>AWS</strong>.
+            </li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header"><span>Infrastructure Engineer</span> <span>September 2019 – May 2020</span></div>
+          <div class="company-info"><span>ISAO Corporation</span> <span>Tokyo, Japan</span></div>
+          <ul>
+            <li>
+              Optimized multi-cloud deployment strategies across <strong>AWS</strong>, <strong>Azure</strong>, and
+              <strong>Kubernetes</strong> for enterprise clients.
+            </li>
+            <li>
+              Modernized legacy software architectures by implementing <strong>RESTful APIs</strong> and contemporary
+              frontend frameworks.
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-break"></div>
+
+        <div class="exp-item">
+          <div class="exp-header"><span>Senior Software Engineer</span> <span>November 2017 – June 2019</span></div>
+          <div class="company-info"><span>Mobingi, Inc.</span> <span>Tokyo, Japan</span></div>
+          <ul>
+            <li>
+              Developed high-availability <strong>Web APIs</strong> for
+              <em>Application Lifecycle Management (ALM)</em> cloud SaaS products.
+            </li>
+            <li>
+              Directed the architectural shift from Monoliths to <strong>Containerized Microservices</strong> on
+              <strong>AWS</strong>.
+            </li>
+            <li>
+              Built internal automation tools for <strong>Cloud Resource Orchestration</strong> using
+              <strong>Node.js</strong>.
+            </li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header"><span>Software Engineer</span> <span>September 2015 – September 2017</span></div>
+          <div class="company-info"><span>LinkPro</span> <span>Tokyo, Japan</span></div>
+          <ul>
+            <li>
+              Developed full-stack <strong>IoT</strong> applications for healthcare devices utilizing real-time sensor
+              data integration.
+            </li>
+            <li>
+              Built cross-platform desktop applications with <strong>Electron</strong> to interface with
+              high-performance <strong>C++</strong> processing engines.
+            </li>
+            <li>
+              Implemented high-concurrency management servers using <strong>Zend Expressive</strong> and
+              <strong>Vue.js</strong>.
+            </li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header"><span>Software Engineer</span> <span>January 2011 – August 2015</span></div>
+          <div class="company-info">
+            <span>EC-Giken / Inove sua Escolha / Hnet</span> <span>Brazil / Japan (Remote)</span>
+          </div>
+          <ul>
+            <li>
+              <em>Magento E-commerce Specialist:</em> Customized enterprise platforms for major retailers (<strong
+                >Amazon JP</strong
+              >, <strong>Rakuten</strong>).
+            </li>
+            <li>
+              <strong>Leadership:</strong> Promoted to <strong>Lead Programmer</strong>, responsible for team
+              management, sprints, and <strong>Code Reviews</strong>.
+            </li>
+            <li>
+              Integrated <strong>Third-Party APIs</strong> and secure payment gateways for large-scale commercial
+              deployments.
+            </li>
+            <li>
+              Engineered responsive web applications using <strong>HTML5</strong>, <strong>CSS3</strong>, and
+              <strong>jQuery</strong>.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Leadership</h2>
+        <div class="skill-group">
+          <strong>Management & Strategy:</strong> Team Mentorship, Technical Leadership, System Design, Scalable
+          Architecture Planning.
+        </div>
+      </section>
+
+      <section>
+        <h2>Education & Languages</h2>
+        <div class="exp-item">
+          <div class="summary-text">
+            <strong>Specialization in Web Systems Development</strong> | Universidade Estadual de Maringá (2011 –
+            2013)<br />
+            <strong>Web Design and Programming</strong> | Universidade do Sul de Santa Catarina (2008 – 2011)
+          </div>
+          <div class="summary-text">
+            <strong>Languages:</strong> English (Professional Working Proficiency) | Portuguese (Native Proficiency)
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

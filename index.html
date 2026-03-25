@@ -1,3 +1,1647 @@
-<!doctype html><html><head><title>Personal Website</title><meta charset=utf-8><meta name=description content="Personal Website"><meta name=format-detection content="telephone=no"><meta name=msapplication-tap-highlight content=no><meta name=viewport content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width"><link rel=icon type=image/png sizes=128x128 href=/icons/favicon-128x128.png><link rel=icon type=image/png sizes=96x96 href=/icons/favicon-96x96.png><link rel=icon type=image/png sizes=32x32 href=/icons/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/icons/favicon-16x16.png><link rel=icon type=image/ico href=/favicon.ico>  <script type="module" crossorigin src="/assets/index-BtQtmZ5c.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-Cyb9JHHm.css">
-</head><body><div id=q-app></div></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diego Varussa Pereira — Senior Software Engineer | Full Stack & Cloud Architect</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Senior Software Engineer with 14+ years of experience in Full Stack development and Cloud Native Architecture. Specialist in Node.js, TypeScript, GraphQL, AWS, GCP and Azure." />
+    <meta name="keywords" content="Diego Varussa Pereira, Senior Software Engineer, Full Stack Developer, Cloud Architect, Node.js, TypeScript, NestJS, GraphQL, AWS, GCP, Azure, Kubernetes, Docker, React, Vue.js, MongoDB, PostgreSQL, Brazil, Japan" />
+    <meta name="author" content="Diego Varussa Pereira" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://diegovarussa.github.io/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://diegovarussa.github.io/" />
+    <meta property="og:title" content="Diego Varussa Pereira — Senior Software Engineer" />
+    <meta property="og:description" content="Senior Software Engineer with 14+ years of experience in Full Stack development and Cloud Native Architecture. Specialist in Node.js, TypeScript, GraphQL, AWS, GCP and Azure." />
+    <meta property="og:image" content="https://diegovarussa.github.io/my_picture.jpg" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="pt_BR" />
+    <meta property="profile:first_name" content="Diego" />
+    <meta property="profile:last_name" content="Varussa Pereira" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Diego Varussa Pereira — Senior Software Engineer" />
+    <meta name="twitter:description" content="Senior Software Engineer with 14+ years of experience in Full Stack development and Cloud Native Architecture." />
+    <meta name="twitter:image" content="https://diegovarussa.github.io/my_picture.jpg" />
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Diego Varussa Pereira",
+      "jobTitle": "Senior Software Engineer",
+      "description": "Senior Software Engineer with 14+ years of experience specializing in Full Stack development and Cloud Native Architecture.",
+      "url": "https://diegovarussa.github.io/",
+      "image": "https://diegovarussa.github.io/my_picture.jpg",
+      "email": "diegovarussa@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Maringá",
+        "addressRegion": "PR",
+        "addressCountry": "BR"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/diegovarussa/"
+      ],
+      "knowsAbout": [
+        "Node.js", "TypeScript", "NestJS", "GraphQL", "AWS", "GCP", "Microsoft Azure",
+        "Kubernetes", "Docker", "MongoDB", "PostgreSQL", "React", "Vue.js", "Microservices"
+      ],
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Universidade Estadual de Maringá"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Universidade do Sul de Santa Catarina"
+        }
+      ]
+    }
+    </script>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <style>
+      /* ─── Synthwave Base ─── */
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&display=swap');
+
+      :root {
+        --bg-deep: #0d0221;
+        --bg-mid: #130a2e;
+        --bg-card: #1a0a35;
+        --neon-pink: #ff2d78;
+        --neon-cyan: #00f5ff;
+        --neon-purple: #bf5af2;
+        --neon-yellow: #f5e642;
+        --neon-green: #39ff14;
+        --text-main: #e8ddf7;
+        --text-dim: #9b8ab8;
+        --border-glow: rgba(191, 90, 242, 0.4);
+        --grid-color: rgba(0, 245, 255, 0.07);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: 'Rajdhani', 'Segoe UI', sans-serif;
+        background-color: var(--bg-deep);
+        color: var(--text-main);
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      /* ─── Grid background ─── */
+      body::before {
+        content: '';
+        position: fixed;
+        inset: 0;
+        background-image:
+          linear-gradient(var(--grid-color) 1px, transparent 1px),
+          linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+        background-size: 40px 40px;
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      /* ─── Horizon glow ─── */
+      body::after {
+        content: '';
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 300px;
+        background: radial-gradient(ellipse 120% 80% at 50% 100%, rgba(255, 45, 120, 0.18) 0%, transparent 70%);
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      /* ─── Navbar ─── */
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 40px;
+        background: rgba(13, 2, 33, 0.85);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(0, 245, 255, 0.2);
+        box-shadow: 0 2px 30px rgba(0, 245, 255, 0.08);
+      }
+
+      .nav-logo {
+        font-family: 'Orbitron', monospace;
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--neon-cyan);
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        text-shadow: 0 0 12px var(--neon-cyan);
+      }
+
+      .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .lang-toggle {
+        display: flex;
+        background: rgba(191, 90, 242, 0.1);
+        border: 1px solid var(--neon-purple);
+        border-radius: 4px;
+        overflow: hidden;
+      }
+
+      .lang-btn {
+        padding: 6px 14px;
+        cursor: pointer;
+        font-family: 'Orbitron', monospace;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        border: none;
+        background: transparent;
+        color: var(--text-dim);
+        transition: all 0.25s;
+      }
+
+      .lang-btn.active {
+        background: var(--neon-purple);
+        color: #fff;
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+        box-shadow: 0 0 16px rgba(191, 90, 242, 0.5);
+      }
+
+      .print-btn {
+        padding: 7px 18px;
+        font-family: 'Orbitron', monospace;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        background: transparent;
+        border: 1px solid var(--neon-pink);
+        color: var(--neon-pink);
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.25s;
+        text-shadow: 0 0 8px rgba(255, 45, 120, 0.5);
+      }
+
+      .print-btn:hover {
+        background: var(--neon-pink);
+        color: #fff;
+        box-shadow: 0 0 20px rgba(255, 45, 120, 0.6);
+      }
+
+      /* ─── Main content ─── */
+      main {
+        position: relative;
+        z-index: 1;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 100px 24px 60px;
+      }
+
+      /* ─── Hero ─── */
+      .hero {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+        margin-bottom: 70px;
+        padding: 48px 40px;
+        background: linear-gradient(135deg, rgba(26, 10, 53, 0.9), rgba(13, 2, 33, 0.7));
+        border: 1px solid rgba(0, 245, 255, 0.25);
+        border-radius: 8px;
+        box-shadow:
+          0 0 40px rgba(0, 245, 255, 0.06),
+          inset 0 1px 0 rgba(255, 255, 255, 0.05);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -20%;
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(circle, rgba(191, 90, 242, 0.12), transparent 65%);
+        pointer-events: none;
+      }
+
+      .hero-picture {
+        flex-shrink: 0;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid var(--neon-cyan);
+        box-shadow:
+          0 0 0 6px rgba(0, 245, 255, 0.12),
+          0 0 30px rgba(0, 245, 255, 0.35);
+      }
+
+      .hero-info {
+        flex: 1;
+      }
+
+      .hero h1 {
+        font-family: 'Orbitron', monospace;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 1.1;
+        color: #fff;
+        text-shadow:
+          0 0 20px rgba(0, 245, 255, 0.6),
+          0 0 40px rgba(0, 245, 255, 0.2);
+        margin-bottom: 8px;
+      }
+
+      .hero-tagline {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--neon-pink);
+        text-shadow: 0 0 12px rgba(255, 45, 120, 0.5);
+        letter-spacing: 1px;
+        margin-bottom: 18px;
+      }
+
+      .contact-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 18px;
+        font-size: 14px;
+        color: var(--text-dim);
+      }
+
+      .contact-bar a {
+        color: var(--neon-cyan);
+        text-decoration: none;
+        text-shadow: 0 0 8px rgba(0, 245, 255, 0.4);
+        transition: color 0.2s;
+      }
+
+      .contact-bar a:hover {
+        color: #fff;
+      }
+
+      .contact-sep {
+        color: rgba(191, 90, 242, 0.5);
+      }
+
+      /* ─── Section ─── */
+      section {
+        margin-bottom: 52px;
+      }
+
+      .section-title {
+        font-family: 'Orbitron', monospace;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: var(--neon-cyan);
+        text-shadow: 0 0 12px rgba(0, 245, 255, 0.5);
+        border-bottom: 1px solid rgba(0, 245, 255, 0.25);
+        padding-bottom: 10px;
+        margin-bottom: 24px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .section-title::before {
+        content: '';
+        display: inline-block;
+        width: 4px;
+        height: 18px;
+        background: linear-gradient(to bottom, var(--neon-cyan), var(--neon-pink));
+        border-radius: 2px;
+        flex-shrink: 0;
+        box-shadow: 0 0 8px var(--neon-cyan);
+      }
+
+      /* ─── Summary ─── */
+      .summary-text {
+        font-size: 15px;
+        color: var(--text-main);
+        line-height: 1.75;
+        padding: 20px 24px;
+        background: rgba(26, 10, 53, 0.5);
+        border-left: 3px solid var(--neon-purple);
+        border-radius: 0 4px 4px 0;
+        box-shadow: -4px 0 20px rgba(191, 90, 242, 0.15);
+      }
+
+      .summary-text strong {
+        color: var(--neon-cyan);
+        font-weight: 700;
+      }
+
+      /* ─── Skills ─── */
+      .skills-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .skill-group {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 12px;
+        padding: 14px 18px;
+        background: rgba(26, 10, 53, 0.6);
+        border: 1px solid rgba(191, 90, 242, 0.2);
+        border-radius: 4px;
+        font-size: 14px;
+        transition:
+          border-color 0.25s,
+          box-shadow 0.25s;
+      }
+
+      .skill-group:hover {
+        border-color: rgba(191, 90, 242, 0.5);
+        box-shadow: 0 0 16px rgba(191, 90, 242, 0.12);
+      }
+
+      .skill-cat {
+        font-weight: 700;
+        color: var(--neon-purple);
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        align-self: center;
+      }
+
+      .skill-list {
+        color: var(--text-main);
+      }
+      .skill-list strong {
+        color: var(--neon-pink);
+        font-weight: 700;
+      }
+
+      /* ─── Experience ─── */
+      .exp-list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .exp-item {
+        padding: 22px 24px;
+        background: rgba(26, 10, 53, 0.6);
+        border: 1px solid rgba(0, 245, 255, 0.12);
+        border-radius: 6px;
+        position: relative;
+        transition:
+          border-color 0.25s,
+          box-shadow 0.25s;
+      }
+
+      .exp-item:hover {
+        border-color: rgba(0, 245, 255, 0.3);
+        box-shadow: 0 0 24px rgba(0, 245, 255, 0.07);
+      }
+
+      .exp-item::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background: linear-gradient(to bottom, var(--neon-cyan), var(--neon-purple));
+        border-radius: 3px 0 0 3px;
+        opacity: 0;
+        transition: opacity 0.25s;
+      }
+
+      .exp-item:hover::before {
+        opacity: 1;
+      }
+
+      .exp-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+        gap: 4px;
+        margin-bottom: 4px;
+      }
+
+      .exp-title {
+        font-family: 'Orbitron', monospace;
+        font-size: 13px;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: 0.5px;
+      }
+
+      .exp-date {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 12px;
+        color: var(--neon-yellow);
+        text-shadow: 0 0 8px rgba(245, 230, 66, 0.4);
+        white-space: nowrap;
+      }
+
+      .exp-company {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+        gap: 4px;
+        margin-bottom: 12px;
+      }
+
+      .company-name {
+        font-size: 15px;
+        font-weight: 700;
+        color: var(--neon-pink);
+        text-shadow: 0 0 8px rgba(255, 45, 120, 0.3);
+      }
+
+      .company-loc {
+        font-size: 13px;
+        color: var(--text-dim);
+        font-style: italic;
+      }
+
+      .exp-bullets {
+        padding-left: 18px;
+        margin: 0;
+      }
+
+      .exp-bullets li {
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: var(--text-main);
+        line-height: 1.55;
+      }
+
+      .exp-bullets li strong {
+        color: var(--neon-cyan);
+        font-weight: 700;
+      }
+      .exp-bullets li em {
+        color: var(--neon-yellow);
+        font-style: normal;
+        font-weight: 600;
+      }
+
+      /* ─── Education ─── */
+      .edu-card {
+        padding: 20px 24px;
+        background: rgba(26, 10, 53, 0.6);
+        border: 1px solid rgba(191, 90, 242, 0.2);
+        border-radius: 6px;
+        font-size: 15px;
+        line-height: 1.9;
+      }
+
+      .edu-card strong {
+        color: var(--neon-cyan);
+      }
+
+      /* ─── Languages ─── */
+      .langs-row {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .lang-badge {
+        padding: 8px 22px;
+        border: 1px solid var(--neon-purple);
+        border-radius: 40px;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--neon-purple);
+        background: rgba(191, 90, 242, 0.08);
+        text-shadow: 0 0 8px rgba(191, 90, 242, 0.3);
+      }
+
+      .lang-badge span {
+        color: var(--text-dim);
+        font-size: 12px;
+        margin-left: 6px;
+        font-weight: 400;
+      }
+
+      /* ─── Leadership ─── */
+      .lead-card {
+        padding: 18px 24px;
+        background: rgba(26, 10, 53, 0.6);
+        border: 1px solid rgba(57, 255, 20, 0.15);
+        border-radius: 6px;
+        font-size: 14px;
+        color: var(--text-main);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .lead-tag {
+        padding: 5px 14px;
+        border: 1px solid rgba(57, 255, 20, 0.3);
+        border-radius: 3px;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        color: var(--neon-green);
+        text-shadow: 0 0 8px rgba(57, 255, 20, 0.3);
+        background: rgba(57, 255, 20, 0.05);
+        text-transform: uppercase;
+      }
+
+      /* ─── Footer ─── */
+      footer {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        padding: 24px;
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 12px;
+        color: rgba(155, 138, 184, 0.4);
+        border-top: 1px solid rgba(0, 245, 255, 0.08);
+      }
+
+      /* ─── Language visibility ─── */
+      [data-lang='pt'] {
+        display: none;
+      }
+
+      body.lang-pt [data-lang='en'] {
+        display: none;
+      }
+      body.lang-pt [data-lang='pt'] {
+        display: revert;
+      }
+
+      /* skill-group and exp-list need flex/grid re-applied */
+      body.lang-pt .skills-grid [data-lang='pt'],
+      body.lang-pt .exp-list [data-lang='pt'],
+      body.lang-pt .langs-row [data-lang='pt'],
+      body.lang-pt .lead-card [data-lang='pt'] {
+        display: flex;
+      }
+
+      body.lang-pt .skill-group[data-lang='pt'] {
+        display: grid;
+      }
+      body.lang-pt .exp-item[data-lang='pt'] {
+        display: block;
+      }
+      body.lang-pt .langs-row[data-lang='pt'] {
+        display: flex;
+      }
+
+      /* ─── Print — shared reset ─── */
+      @media print {
+        nav,
+        footer,
+        body::before,
+        body::after {
+          display: none !important;
+        }
+
+        * {
+          text-shadow: none !important;
+          box-shadow: none !important;
+          background: transparent !important;
+          color: inherit !important;
+          border-radius: 0 !important;
+        }
+
+        *::before,
+        *::after {
+          display: none !important;
+        }
+
+        main {
+          max-width: 100%;
+          padding: 0;
+          margin: 0;
+        }
+
+        /* strip card chrome */
+        .hero,
+        .exp-item,
+        .skill-group,
+        .summary-text,
+        .edu-card,
+        .lead-card,
+        .skills-grid {
+          border: none !important;
+        }
+
+        /* ── EN print — mirrors en.html ── */
+        body:not(.lang-pt) {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 10pt;
+          line-height: 1.4;
+          color: #222222;
+        }
+
+        /* hero → en.html <header> */
+        body:not(.lang-pt) .hero {
+          display: block !important;
+          border-bottom: 2px solid #000 !important;
+          padding: 0 0 10px 0;
+          margin-bottom: 15px;
+          gap: 0;
+        }
+        body:not(.lang-pt) .hero-picture {
+          display: none;
+        }
+        body:not(.lang-pt) .hero h1 {
+          font-size: 22pt;
+          color: #000000;
+          margin-bottom: 2px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        body:not(.lang-pt) .hero-tagline {
+          font-size: 13pt;
+          color: #003366;
+          font-weight: bold;
+          margin-bottom: 8px;
+        }
+        body:not(.lang-pt) .contact-bar {
+          display: flex !important;
+          flex-wrap: wrap;
+          gap: 4px 12px;
+          font-size: 10pt;
+          color: #222222;
+        }
+        body:not(.lang-pt) .contact-bar a {
+          color: #222222;
+        }
+        body:not(.lang-pt) .contact-sep {
+          color: #222222;
+        }
+
+        /* section titles → en.html h2 */
+        body:not(.lang-pt) .section-title {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 12pt;
+          color: #000000;
+          border-bottom: 1px solid #000 !important;
+          border-left: none !important;
+          padding: 0 0 2px 0;
+          margin-top: 15px;
+          margin-bottom: 8px;
+          text-transform: uppercase;
+          letter-spacing: 0;
+          gap: 0;
+        }
+        body:not(.lang-pt) .section-title::before {
+          display: none;
+        }
+
+        /* summary */
+        body:not(.lang-pt) .summary-text {
+          font-size: 9.8pt;
+          color: #222222;
+          border-left: none !important;
+          padding: 0;
+          margin-bottom: 8px;
+          text-align: justify;
+        }
+        body:not(.lang-pt) .summary-text strong {
+          color: #222222;
+        }
+
+        /* skills → en.html .skill-group */
+        body:not(.lang-pt) .skills-grid {
+          display: block !important;
+        }
+        body:not(.lang-pt) .skill-group {
+          display: block !important;
+          grid-template-columns: unset;
+          margin-bottom: 6px;
+          font-size: 9.2pt;
+          padding: 0;
+        }
+        body:not(.lang-pt) .skill-cat {
+          display: inline;
+          font-size: 8.8pt;
+          color: #000000;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+        body:not(.lang-pt) .skill-cat::after {
+          content: ' ';
+        }
+        body:not(.lang-pt) .skill-list {
+          display: inline;
+          font-size: 9.2pt;
+          color: #222222;
+        }
+        body:not(.lang-pt) .skill-list strong {
+          color: #222222;
+        }
+
+        /* experience → en.html .exp-item */
+        body:not(.lang-pt) .exp-list {
+          display: block !important;
+        }
+        body:not(.lang-pt) .exp-item {
+          border: none !important;
+          padding: 0;
+          margin-bottom: 12px;
+        }
+        body:not(.lang-pt) .exp-item::before {
+          display: none;
+        }
+        body:not(.lang-pt) .exp-header {
+          display: flex !important;
+          justify-content: space-between;
+          font-weight: bold;
+          font-size: 10.5pt;
+          color: #222222;
+        }
+        body:not(.lang-pt) .exp-title {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 10.5pt;
+          font-weight: bold;
+          color: #222222;
+          letter-spacing: 0;
+        }
+        body:not(.lang-pt) .exp-date {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 10.5pt;
+          font-weight: bold;
+          color: #222222;
+        }
+        body:not(.lang-pt) .exp-company {
+          display: flex !important;
+          justify-content: space-between;
+          color: #003366;
+          font-weight: bold;
+          margin-bottom: 3px;
+          font-size: 10pt;
+        }
+        body:not(.lang-pt) .company-name {
+          font-size: 10pt;
+          color: #003366;
+        }
+        body:not(.lang-pt) .company-loc {
+          font-size: 10pt;
+          color: #003366;
+          font-style: normal;
+        }
+        body:not(.lang-pt) .exp-bullets {
+          padding-left: 18px;
+          margin-top: 4px;
+          font-size: 9.2pt;
+          color: #222222;
+        }
+        body:not(.lang-pt) .exp-bullets li {
+          margin-bottom: 2.5px;
+        }
+        body:not(.lang-pt) .exp-bullets li strong {
+          color: #222222;
+        }
+        body:not(.lang-pt) .exp-bullets li em {
+          font-style: italic;
+          color: #222222;
+          font-weight: normal;
+        }
+
+        /* leadership */
+        body:not(.lang-pt) .lead-card {
+          display: block !important;
+          padding: 0;
+          font-size: 9.2pt;
+          color: #222222;
+        }
+        body:not(.lang-pt) .lead-tag {
+          display: inline;
+          border: none;
+          background: none !important;
+          color: #222222;
+          font-weight: normal;
+          text-transform: none;
+          padding: 0;
+          font-size: 9.2pt;
+        }
+        body:not(.lang-pt) .lead-tag::after {
+          content: ', ';
+        }
+        body:not(.lang-pt) .lead-tag:last-child::after {
+          content: '';
+        }
+
+        /* education */
+        body:not(.lang-pt) .edu-card {
+          font-size: 9.8pt;
+          color: #222222;
+          padding: 0;
+        }
+        body:not(.lang-pt) .edu-card strong {
+          color: #222222;
+        }
+
+        /* languages */
+        body:not(.lang-pt) .langs-row {
+          display: flex !important;
+          gap: 16px;
+          flex-wrap: wrap;
+          font-size: 9.8pt;
+        }
+        body:not(.lang-pt) .lang-badge {
+          border: none;
+          padding: 0;
+          font-size: 9.8pt;
+          color: #222222;
+          background: none !important;
+        }
+        body:not(.lang-pt) .lang-badge span {
+          color: #222222;
+          font-size: 9.8pt;
+        }
+
+        /* ── PT print — mirrors pt-br.html ── */
+        body.lang-pt {
+          font-family: 'Segoe UI', Arial, sans-serif;
+          font-size: 14px;
+          line-height: 1.5;
+          color: #1a1a1a;
+        }
+
+        /* hero → pt-br.html <header> centered */
+        body.lang-pt .hero {
+          display: block !important;
+          text-align: center;
+          border-bottom: 2px solid #333 !important;
+          padding: 0 0 15px 0;
+          margin-bottom: 20px;
+          gap: 0;
+        }
+        body.lang-pt .hero-picture {
+          display: none;
+        }
+        body.lang-pt .hero h1 {
+          font-size: 26px;
+          color: #000;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin-bottom: 8px;
+          font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        body.lang-pt .hero-tagline {
+          font-size: 14px;
+          color: #444;
+          font-weight: normal;
+          font-style: italic;
+          margin-bottom: 6px;
+        }
+        body.lang-pt .contact-bar {
+          display: flex !important;
+          flex-wrap: wrap;
+          gap: 4px 10px;
+          justify-content: center;
+          font-size: 14px;
+          color: #444;
+        }
+        body.lang-pt .contact-bar a {
+          color: #2980b9;
+        }
+        body.lang-pt .contact-sep {
+          color: #444;
+        }
+
+        /* section titles → pt-br.html h2 */
+        body.lang-pt .section-title {
+          font-family: 'Segoe UI', Arial, sans-serif;
+          font-size: 18px;
+          color: #2c3e50;
+          background: #f4f4f4 !important;
+          border-left: 6px solid #2980b9 !important;
+          border-bottom: none !important;
+          padding: 6px 12px;
+          margin-top: 25px;
+          margin-bottom: 10px;
+          text-transform: uppercase;
+          letter-spacing: 0;
+          gap: 0;
+        }
+        body.lang-pt .section-title::before {
+          display: none;
+        }
+
+        /* summary */
+        body.lang-pt .summary-text {
+          font-size: 14px;
+          color: #1a1a1a;
+          border-left: none !important;
+          padding: 0;
+          margin: 10px 0;
+          text-align: justify;
+        }
+        body.lang-pt .summary-text strong {
+          color: #1a1a1a;
+        }
+
+        /* skills → pt-br.html .skills-row grid */
+        body.lang-pt .skills-grid {
+          display: flex !important;
+          flex-direction: column;
+          gap: 8px;
+        }
+        body.lang-pt .skill-group {
+          display: grid !important;
+          grid-template-columns: 200px 1fr;
+          gap: 12px;
+          padding: 0;
+          font-size: 14px;
+          border: none !important;
+        }
+        body.lang-pt .skill-cat {
+          font-weight: bold;
+          color: #34495e;
+          font-size: 14px;
+          text-transform: none;
+        }
+        body.lang-pt .skill-list {
+          color: #1a1a1a;
+          font-size: 14px;
+        }
+        body.lang-pt .skill-list strong {
+          color: #1a1a1a;
+        }
+
+        /* experience → pt-br.html h3 / .job-title / ul style */
+        body.lang-pt .exp-list {
+          display: block !important;
+        }
+        body.lang-pt .exp-item {
+          border: none !important;
+          padding: 0;
+          margin-bottom: 16px;
+        }
+        body.lang-pt .exp-item::before {
+          display: none;
+        }
+        body.lang-pt .exp-header {
+          display: flex !important;
+          justify-content: space-between;
+          align-items: baseline;
+          margin-top: 18px;
+          margin-bottom: 3px;
+          font-size: 16px;
+        }
+        body.lang-pt .exp-title {
+          font-family: 'Segoe UI', Arial, sans-serif;
+          font-size: 16px;
+          font-weight: bold;
+          color: #2c3e50;
+          letter-spacing: 0;
+        }
+        body.lang-pt .exp-date {
+          font-family: 'Segoe UI', Arial, sans-serif;
+          font-size: 13px;
+          font-weight: normal;
+          color: #666;
+        }
+        body.lang-pt .exp-company {
+          display: flex !important;
+          justify-content: space-between;
+          margin-bottom: 5px;
+        }
+        body.lang-pt .company-name {
+          font-weight: bold;
+          font-style: italic;
+          color: #444;
+          font-size: 15px;
+        }
+        body.lang-pt .company-loc {
+          font-size: 13px;
+          color: #666;
+          font-style: normal;
+        }
+        body.lang-pt .exp-bullets {
+          padding-left: 20px;
+          margin-top: 5px;
+          font-size: 14px;
+          color: #1a1a1a;
+        }
+        body.lang-pt .exp-bullets li {
+          margin-bottom: 4px;
+          text-align: justify;
+        }
+        body.lang-pt .exp-bullets li strong {
+          color: #1a1a1a;
+        }
+        body.lang-pt .exp-bullets li em {
+          color: #1a1a1a;
+          font-weight: normal;
+        }
+
+        /* leadership */
+        body.lang-pt .lead-card {
+          display: flex !important;
+          flex-wrap: wrap;
+          gap: 8px;
+          padding: 0;
+        }
+        body.lang-pt .lead-tag {
+          border: 1px solid #bbb !important;
+          background: none !important;
+          color: #2c3e50;
+          font-size: 13px;
+          font-weight: 600;
+          text-transform: none;
+          padding: 4px 12px;
+        }
+
+        /* education */
+        body.lang-pt .edu-card {
+          font-size: 14px;
+          color: #1a1a1a;
+          padding: 0;
+          line-height: 1.9;
+        }
+        body.lang-pt .edu-card strong {
+          color: #1a1a1a;
+        }
+
+        /* languages */
+        body.lang-pt .langs-row {
+          display: flex !important;
+          flex-wrap: wrap;
+          gap: 12px;
+        }
+        body.lang-pt .lang-badge {
+          border: 1px solid #bbb !important;
+          border-radius: 40px !important;
+          padding: 6px 18px;
+          font-size: 14px;
+          color: #2c3e50;
+          background: none !important;
+        }
+        body.lang-pt .lang-badge span {
+          color: #666;
+          font-size: 13px;
+          margin-left: 4px;
+        }
+
+        /* enforce language visibility — must be last to win source-order tie */
+        body:not(.lang-pt) [data-lang='pt'] {
+          display: none !important;
+        }
+        body.lang-pt [data-lang='en'] {
+          display: none !important;
+        }
+      }
+
+      /* ─── Responsive ─── */
+      @media (max-width: 640px) {
+        nav {
+          padding: 12px 16px;
+        }
+        .nav-logo {
+          font-size: 11px;
+          letter-spacing: 1px;
+        }
+        main {
+          padding: 80px 16px 40px;
+        }
+        .hero {
+          flex-direction: column;
+          text-align: center;
+          padding: 32px 24px;
+          gap: 24px;
+        }
+        .hero h1 {
+          font-size: 22px;
+        }
+        .contact-bar {
+          justify-content: center;
+        }
+        .skill-group {
+          grid-template-columns: 1fr;
+        }
+        .exp-header {
+          flex-direction: column;
+        }
+        .exp-company {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ─── Navbar ─── -->
+    <nav>
+      <div class="nav-logo">DVP</div>
+      <div class="nav-right">
+        <div class="lang-toggle">
+          <button class="lang-btn active" onclick="setLang('en')" id="btn-en">EN</button>
+          <button class="lang-btn" onclick="setLang('pt')" id="btn-pt">PT</button>
+        </div>
+        <button class="print-btn" onclick="window.print()">&#x2399; PDF</button>
+      </div>
+    </nav>
+
+    <!-- ─── Main ─── -->
+    <main>
+      <!-- HERO -->
+      <div class="hero">
+        <img class="hero-picture" src="my_picture.jpg" alt="Diego Varussa Pereira" />
+        <div class="hero-info">
+          <h1>Diego Varussa Pereira</h1>
+
+          <div class="hero-tagline" data-lang="en">Senior Software Engineer | Full Stack &amp; Cloud Architect</div>
+          <div class="hero-tagline" data-lang="pt">
+            Engenheiro de Software Sênior | Especialista em Arquitetura de Nuvem
+          </div>
+
+          <!-- EN contacts -->
+          <div class="contact-bar" data-lang="en">
+            <span>Maringá, PR, Brazil</span>
+            <span class="contact-sep">|</span>
+            <a href="mailto:diegovarussa@gmail.com">diegovarussa@gmail.com</a>
+            <span class="contact-sep">|</span>
+            <a href="https://www.linkedin.com/in/diegovarussa/" target="_blank">linkedin.com/in/diegovarussa</a>
+          </div>
+
+          <!-- PT contacts -->
+          <div class="contact-bar" data-lang="pt">
+            <span>Maringá, PR, Brasil</span>
+            <span class="contact-sep">|</span>
+            <span>(44) 99958-2564</span>
+            <span class="contact-sep">|</span>
+            <a href="mailto:diegovarussa@gmail.com">diegovarussa@gmail.com</a>
+            <span class="contact-sep">|</span>
+            <a href="https://www.linkedin.com/in/diegovarussa/?locale=pt-BR" target="_blank"
+              >linkedin.com/in/diegovarussa</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- SUMMARY -->
+      <section>
+        <h2 class="section-title" data-lang="en">Professional Summary</h2>
+        <h2 class="section-title" data-lang="pt">Resumo Profissional</h2>
+
+        <div class="summary-text" data-lang="en">
+          Expert <strong>Full Stack Software Engineer</strong> with
+          <strong>14+ years of experience</strong> specializing in high-scalability web systems and
+          <strong>Cloud Native Architecture</strong>. Advanced proficiency in
+          <strong>Node.js (NestJS), TypeScript, and GraphQL</strong>. Proven track record of architecting and delivering
+          robust <strong>Microservices</strong> and interactive <strong>Single Page Applications (SPA)</strong> across
+          <strong>Amazon Web Services (AWS)</strong>, <strong>Google Cloud Platform (GCP)</strong>, and
+          <strong>Microsoft Azure</strong> for global enterprise markets.
+        </div>
+
+        <div class="summary-text" data-lang="pt">
+          Engenheiro de Software com <strong>14 anos de trajetória</strong>, combinando sólida experiência internacional
+          no <strong>Japão</strong> com domínio das tecnologias mais requisitadas do mercado (<strong
+            >Node.js, TypeScript e Ecossistema AWS/GCP</strong
+          >). Especialista em transformar sistemas legados em arquiteturas de microsserviços escaláveis e no
+          desenvolvimento de soluções complexas de <strong>Forex (FX) e GameFi (Web3/DeFi)</strong>.<br /><br />
+          Expert em liderar o ciclo de vida completo de software — da concepção e prototipagem à infraestrutura
+          serverless e monitoramento de dados em tempo real. Reconhecido pela capacidade de unir visão de produto com
+          excelência técnica, entregando plataformas de alta performance que suportam o crescimento do negócio.
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section>
+        <h2 class="section-title" data-lang="en">Technical Skills</h2>
+        <h2 class="section-title" data-lang="pt">Competências Técnicas</h2>
+
+        <!-- EN skills -->
+        <div class="skills-grid" data-lang="en">
+          <div class="skill-group">
+            <div class="skill-cat">Core Languages &amp; Frameworks</div>
+            <div class="skill-list">
+              TypeScript, JavaScript (ES6+), Node.js, NestJS, <strong>GraphQL (Apollo)</strong>, PHP (Zend,
+              CodeIgniter), HTML5, CSS3, Vue.js, Quasar, React, Angular.
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-cat">Cloud, Infrastructure &amp; DevOps</div>
+            <div class="skill-list">
+              <strong>AWS</strong>, <strong>GCP</strong>, <strong>Microsoft Azure</strong>,
+              <strong>Kubernetes (K8s)</strong>, <strong>Docker</strong>, CI/CD, CircleCI, GitHub Actions,
+              <strong>Grafana</strong>, <strong>Terraform</strong>, <strong>AWS CDK</strong>.
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-cat">Databases &amp; Backend Infra</div>
+            <div class="skill-list">
+              <strong>MongoDB</strong>, <strong>MySQL</strong>, <strong>PostgreSQL</strong>, <strong>DynamoDB</strong>,
+              Amazon <strong>Neptune</strong>, <strong>Prisma ORM</strong>, <strong>Redis</strong>, VPC, Route 53,
+              <strong>AWS Lambda</strong>, API Gateway, ECS/Fargate.
+            </div>
+          </div>
+        </div>
+
+        <!-- PT skills -->
+        <div class="skills-grid" data-lang="pt">
+          <div class="skill-group">
+            <div class="skill-cat">Linguagens &amp; Frameworks</div>
+            <div class="skill-list">
+              Node.js, TypeScript, NestJS, JavaScript (ES6+), Vue.js (2/3), Quasar, <strong>Apollo GraphQL</strong>, PHP
+              (Zend, CodeIgniter), Electron.
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-cat">Cloud &amp; Infraestrutura</div>
+            <div class="skill-list">
+              <strong>AWS</strong> (Lambda, CDK, ECS, EC2, S3, Neptune, DynamoDB), <strong>Google Cloud (GCP)</strong>,
+              Microsoft Azure, Kubernetes, Docker, CI/CD.
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-cat">Bancos de Dados &amp; Tools</div>
+            <div class="skill-list">
+              <strong>MongoDB</strong>, MySQL, PostgreSQL, Prisma ORM, Redis, Grafana, Prometheus, Git Flow.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section>
+        <h2 class="section-title" data-lang="en">Professional Experience</h2>
+        <h2 class="section-title" data-lang="pt">Experiência Profissional</h2>
+
+        <!-- EN experience -->
+        <div class="exp-list" data-lang="en">
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">Senior Software Engineer</span>
+              <span class="exp-date">Jan 2025 – Present</span>
+            </div>
+            <div class="exp-company">
+              <span class="company-name">DIEGO VARUSSA PEREIRA LTDA</span>
+              <span class="company-loc">Maringá, Brazil</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Architect and engineer high-concurrency <strong>APIs</strong> using
+                <strong>NestJS, Apollo GraphQL, Prisma, and MongoDB</strong>.
+              </li>
+              <li>
+                Design and manage automated <strong>Cloud Infrastructure</strong> and <strong>DevOps</strong> pipelines
+                on <strong>Google Cloud Platform (GCP)</strong>.
+              </li>
+              <li>
+                Establish full-stack <strong>Observability</strong> and real-time performance monitoring using
+                <strong>Grafana</strong>.
+              </li>
+              <li>
+                Implement secure <strong>OAuth2</strong> authentication and responsive,
+                <strong>multilingual</strong> frontend architectures.
+              </li>
+            </ul>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">Senior Software Engineer</span>
+              <span class="exp-date">Jul 2020 – Dec 2024</span>
+            </div>
+            <div class="exp-company">
+              <span class="company-name">Geeklys</span>
+              <span class="company-loc">Tokyo, Japan</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                <em>GameFi &amp; Fintech:</em> Engineered <strong>Serverless</strong> architectures using
+                <strong>AWS Lambda</strong>, <strong>CDK</strong>, and <strong>Neptune</strong> for decentralized
+                platforms.
+              </li>
+              <li>
+                Developed automated financial <strong>Trading Analysis</strong> tools for FX and Cryptocurrency markets
+                on <strong>Ethereum</strong> and <strong>Binance Smart Chain (BSC)</strong>.
+              </li>
+              <li>
+                Built scalable <strong>Microservices</strong> and <strong>Matching Engines</strong> using
+                <strong>Node.js</strong> and <strong>TypeScript</strong>.
+              </li>
+              <li>
+                Optimized cloud security and networking protocols (<strong>VPC</strong>, <strong>Route 53</strong>,
+                <strong>WAF</strong>, <strong>App Runner</strong>, <strong>S3</strong>) on <strong>AWS</strong>.
+              </li>
+            </ul>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">Infrastructure Engineer</span>
+              <span class="exp-date">Sep 2019 – May 2020</span>
+            </div>
+            <div class="exp-company">
+              <span class="company-name">ISAO Corporation</span>
+              <span class="company-loc">Tokyo, Japan</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Optimized multi-cloud deployment strategies across <strong>AWS</strong>, <strong>Azure</strong>, and
+                <strong>Kubernetes</strong> for enterprise clients.
+              </li>
+              <li>
+                Modernized legacy software architectures by implementing <strong>RESTful APIs</strong> and contemporary
+                frontend frameworks.
+              </li>
+            </ul>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">Senior Software Engineer</span>
+              <span class="exp-date">Nov 2017 – Jun 2019</span>
+            </div>
+            <div class="exp-company">
+              <span class="company-name">Mobingi, Inc.</span>
+              <span class="company-loc">Tokyo, Japan</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Developed high-availability <strong>Web APIs</strong> for
+                <em>Application Lifecycle Management (ALM)</em> cloud SaaS products.
+              </li>
+              <li>
+                Directed the architectural shift from Monoliths to <strong>Containerized Microservices</strong> on
+                <strong>AWS</strong>.
+              </li>
+              <li>
+                Built internal automation tools for <strong>Cloud Resource Orchestration</strong> using
+                <strong>Node.js</strong>.
+              </li>
+            </ul>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">Software Engineer</span>
+              <span class="exp-date">Sep 2015 – Sep 2017</span>
+            </div>
+            <div class="exp-company">
+              <span class="company-name">LinkPro</span>
+              <span class="company-loc">Tokyo, Japan</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Developed full-stack <strong>IoT</strong> applications for healthcare devices utilizing real-time sensor
+                data integration.
+              </li>
+              <li>
+                Built cross-platform desktop applications with <strong>Electron</strong> to interface with
+                high-performance <strong>C++</strong> processing engines.
+              </li>
+              <li>
+                Implemented high-concurrency management servers using <strong>Zend Expressive</strong> and
+                <strong>Vue.js</strong>.
+              </li>
+            </ul>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">Software Engineer</span>
+              <span class="exp-date">Jan 2011 – Aug 2015</span>
+            </div>
+            <div class="exp-company">
+              <span class="company-name">EC-Giken / Inove sua Escolha / Hnet</span>
+              <span class="company-loc">Brazil / Japan (Remote)</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                <em>Magento E-commerce Specialist:</em> Customized enterprise platforms for major retailers (<strong
+                  >Amazon JP</strong
+                >, <strong>Rakuten</strong>).
+              </li>
+              <li>
+                <strong>Leadership:</strong> Promoted to <strong>Lead Programmer</strong>, responsible for team
+                management, sprints, and <strong>Code Reviews</strong>.
+              </li>
+              <li>
+                Integrated <strong>Third-Party APIs</strong> and secure payment gateways for large-scale commercial
+                deployments.
+              </li>
+              <li>
+                Engineered responsive web applications using <strong>HTML5</strong>, <strong>CSS3</strong>, and
+                <strong>jQuery</strong>.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PT experience -->
+        <div class="exp-list" data-lang="pt">
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">Engenheiro de Software Sênior (Fundador)</span>
+              <span class="exp-date">Jan 2025 – Presente</span>
+            </div>
+            <div class="exp-company">
+              <span class="company-name">DIEGO VARUSSA PEREIRA LTDA</span>
+              <span class="company-loc">Maringá, PR</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Liderança da arquitetura <strong>Full Stack</strong> de uma plataforma escalável para economia de jogos
+                online.
+              </li>
+              <li>
+                Implementação de <strong>Backend</strong> com NestJS e Apollo GraphQL, otimizando consultas complexas em
+                MongoDB via Prisma.
+              </li>
+              <li>
+                Desenvolvimento de interface <strong>Mobile-First</strong> com Quasar e Vue 3, com foco em alta
+                performance e suporte multilíngue.
+              </li>
+              <li>
+                Gestão de infraestrutura em <strong>Google Cloud Platform</strong> com monitoramento avançado via
+                Grafana.
+              </li>
+            </ul>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">Engenheiro de Software Sênior</span>
+              <span class="exp-date">Jul 2020 – Dez 2024</span>
+            </div>
+            <div class="exp-company">
+              <span class="company-name">Geeklys</span>
+              <span class="company-loc">Tóquio, Japão</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Desenvolvimento de plataforma de <strong>GameFi (Scholarship matching)</strong> utilizando AWS CDK e
+                banco de dados em grafo <strong>AWS Neptune</strong>.
+              </li>
+              <li>
+                Criação de algoritmos de análise de trading para <strong>FX e Criptomoedas (DeFi)</strong> nas redes
+                Ethereum e Binance Smart Chain.
+              </li>
+              <li>Otimização de sistemas distribuídos e monitoramento de dados críticos com Grafana e Prometheus.</li>
+            </ul>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">Engenheiro de Infraestrutura Cloud</span>
+              <span class="exp-date">Set 2019 – Mai 2020</span>
+            </div>
+            <div class="exp-company">
+              <span class="company-name">ISAO Corporation</span>
+              <span class="company-loc">Tóquio, Japão</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Desenho de arquiteturas <strong>Multi-Cloud (AWS e Azure)</strong> para clientes corporativos de larga
+                escala.
+              </li>
+              <li>
+                Gerenciamento de containers com <strong>Kubernetes</strong>, garantindo alta disponibilidade e
+                escalabilidade.
+              </li>
+            </ul>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">Engenheiro de Software Sênior</span>
+              <span class="exp-date">Nov 2017 – Jun 2019</span>
+            </div>
+            <div class="exp-company">
+              <span class="company-name">Mobingi, Inc.</span>
+              <span class="company-loc">Tóquio, Japão</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Migração de sistemas monolíticos para <strong>Microsserviços</strong> em ambiente AWS.</li>
+              <li>Desenvolvimento de APIs críticas para gestão de ciclo de vida de aplicações (ALM).</li>
+            </ul>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">Engenheiro de Software / Desenvolvedor</span>
+              <span class="exp-date">Jan 2011 – Set 2017</span>
+            </div>
+            <div class="exp-company">
+              <span class="company-name">LinkPro / EC-Giken / Inove</span>
+              <span class="company-loc">Brasil &amp; Japão</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Desenvolvimento de software de processamento de imagem com <strong>Electron</strong> e
+                <strong>C++</strong> na LinkPro.
+              </li>
+              <li>
+                Especialista na plataforma <strong>Magento</strong> e integração de e-commerce com Amazon e Rakuten no
+                Japão.
+              </li>
+              <li>Liderança de projetos web em PHP e integração de gateways de pagamento.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- LEADERSHIP -->
+      <section>
+        <h2 class="section-title" data-lang="en">Leadership</h2>
+        <h2 class="section-title" data-lang="pt">Liderança</h2>
+
+        <div class="lead-card" data-lang="en">
+          <span class="lead-tag">Team Mentorship</span>
+          <span class="lead-tag">Technical Leadership</span>
+          <span class="lead-tag">System Design</span>
+          <span class="lead-tag">Scalable Architecture</span>
+          <span class="lead-tag">Sprint Management</span>
+          <span class="lead-tag">Code Review</span>
+        </div>
+
+        <div class="lead-card" data-lang="pt">
+          <span class="lead-tag">Mentoria de Equipes</span>
+          <span class="lead-tag">Liderança Técnica</span>
+          <span class="lead-tag">Design de Sistemas</span>
+          <span class="lead-tag">Arquitetura Escalável</span>
+          <span class="lead-tag">Gestão de Sprints</span>
+          <span class="lead-tag">Code Review</span>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section>
+        <h2 class="section-title" data-lang="en">Education</h2>
+        <h2 class="section-title" data-lang="pt">Formação Acadêmica</h2>
+
+        <div class="edu-card" data-lang="en">
+          <strong>Specialization in Web Systems Development</strong> — Universidade Estadual de Maringá (2011 – 2013)<br />
+          <strong>Web Design and Programming</strong> — Universidade do Sul de Santa Catarina (2008 – 2011)
+        </div>
+
+        <div class="edu-card" data-lang="pt">
+          <strong>Pós-Graduação em Desenvolvimento de Sistemas Web</strong> — UEM – Maringá, PR (2013)<br />
+          <strong>Graduação em Design e Programação Web</strong> — UNISUL – Santa Catarina (2011)
+        </div>
+      </section>
+
+      <!-- LANGUAGES -->
+      <section>
+        <h2 class="section-title" data-lang="en">Languages</h2>
+        <h2 class="section-title" data-lang="pt">Idiomas</h2>
+
+        <div class="langs-row" data-lang="en">
+          <div class="lang-badge">English <span>Professional Working Proficiency</span></div>
+          <div class="lang-badge">Portuguese <span>Native Proficiency</span></div>
+        </div>
+
+        <div class="langs-row" data-lang="pt">
+          <div class="lang-badge">Português <span>Nativo</span></div>
+          <div class="lang-badge">Inglês <span>Avançado — Experiência profissional internacional</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>&copy; 2026 Diego Varussa Pereira</footer>
+
+    <script>
+      function setLang(lang) {
+        document.body.classList.toggle('lang-pt', lang === 'pt');
+        document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+        document.getElementById('btn-pt').classList.toggle('active', lang === 'pt');
+        document.documentElement.lang = lang === 'pt' ? 'pt-br' : 'en';
+        localStorage.setItem('resume-lang', lang);
+      }
+
+      // Restore last chosen language
+      (function () {
+        const saved = localStorage.getItem('resume-lang');
+        if (saved === 'pt') setLang('pt');
+      })();
+    </script>
+  </body>
+</html>
