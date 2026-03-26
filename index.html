@@ -1210,7 +1210,7 @@
           <div class="contact-bar" data-lang="en">
             <span>Maringá, PR, Brazil</span>
             <span class="contact-sep">|</span>
-            <span>36 years old</span>
+            <span id="age-en"></span>
             <span class="contact-sep">|</span>
             <a href="mailto:diegovarussa@gmail.com">diegovarussa@gmail.com</a>
             <span class="contact-sep">|</span>
@@ -1221,7 +1221,7 @@
           <div class="contact-bar" data-lang="pt">
             <span>Maringá, PR, Brasil</span>
             <span class="contact-sep">|</span>
-            <span>36 anos</span>
+            <span id="age-pt"></span>
             <span class="contact-sep">|</span>
             <span>(44) 99958-2564</span>
             <span class="contact-sep">|</span>
@@ -1662,6 +1662,13 @@
         document.documentElement.lang = lang === 'pt' ? 'pt-br' : 'en';
         localStorage.setItem('resume-lang', lang);
       }
+
+      // Dynamic age
+      (function () {
+        const age = new Date().getFullYear() - 1990;
+        document.getElementById('age-en').textContent = age + ' years old';
+        document.getElementById('age-pt').textContent = age + ' anos';
+      })();
 
       // Restore last chosen language
       (function () {
