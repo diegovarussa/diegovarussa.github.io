@@ -106,14 +106,9 @@
         margin-bottom: 2.5px;
       }
 
-      .skill-group {
-        margin-bottom: 6px;
+      .inline-list {
         font-size: 9.2pt;
-      }
-      .skill-group strong {
-        color: var(--primary-color);
-        text-transform: uppercase;
-        font-size: 8.8pt;
+        margin-bottom: 6px;
       }
 
       .page-break {
@@ -122,9 +117,6 @@
       }
 
       @media print {
-        body {
-          padding: 0;
-        }
         .resume-container {
           padding: 12mm 15mm;
           width: 100%;
@@ -136,53 +128,48 @@
     <div class="resume-container">
       <header>
         <h1 itemprop="name">Diego Varussa Pereira</h1>
-        <div class="tagline" itemprop="jobTitle">Senior Software Engineer | Full Stack & Cloud Architect</div>
+        <div class="tagline" itemprop="jobTitle">
+          Senior Backend Engineer | Cloud Architect | Node.js · TypeScript · Microservices · AWS &amp; Azure
+        </div>
         <div class="contact-bar">
           <span itemprop="address" itemscope itemtype="http://schema.org">
-            <span itemprop="addressLocality">Maringá</span>, <span itemprop="addressRegion">PR</span>,
+            <span itemprop="addressRegion">Paraná</span>,
             <span itemprop="addressCountry">Brazil</span>
           </span>
           | <span itemprop="email">diegovarussa@gmail.com</span> |
           <span
-            ><a href="https://www.linkedin.com/in/diegovarussa/" target="_blank" itemprop="url"
-              >linkedin.com/in/diegovarussa</a
+            ><a href="https://www.linkedin.com/in/diego-varussa" target="_blank" itemprop="url"
+              >linkedin.com/in/diego-varussa</a
             ></span
           >
+          |
+          <span><a href="https://github.com/diegovarussa" target="_blank">github.com/diegovarussa</a></span>
         </div>
       </header>
 
       <section>
         <h2>Professional Summary</h2>
         <div class="summary-text" itemprop="description">
-          Expert <strong>Full Stack Software Engineer</strong> with
-          <strong>14+ years of experience</strong> specializing in high-scalability web systems and
-          <strong>Cloud Native Architecture</strong>. Advanced proficiency in
-          <strong>Node.js (NestJS), TypeScript, and GraphQL</strong>. Proven track record of architecting and delivering
-          robust <strong>Microservices</strong> and interactive <strong>Single Page Applications (SPA)</strong> across
-          <strong>Amazon Web Services (AWS)</strong>, <strong>Google Cloud Platform (GCP)</strong>, and
-          <strong>Microsoft Azure</strong> for global enterprise markets.
+          Results-driven <strong>Senior Software Engineer and Cloud Architect</strong> with over
+          <strong>14 years of experience</strong> building high-scale, cloud-native applications. Proven track record of
+          delivering massive performance gains, including <strong>slashing platform latency by 99%</strong> (from 5
+          minutes to 150ms) and <strong>reducing data processing times by 98%</strong> for large-scale Magento
+          environments. Focus on turning complex technical debt into streamlined, high-performance systems that drive
+          business value.
         </div>
-      </section>
-
-      <section>
-        <h2>Technical Skills</h2>
-        <div class="skill-group">
-          <strong>Core Languages & Frameworks:</strong> TypeScript, JavaScript (ES6+), Node.js, NestJS, GraphQL
-          (Apollo), C#, PHP (Zend, CodeIgniter), HTML5, CSS3, Vue.js, Quasar, React, Angular.
+        <div class="summary-text">
+          Core expertise revolves around <strong>Node.js, TypeScript, and NestJS</strong>, paired with deep experience
+          in <strong>AWS and Azure</strong> infrastructure. Specialist in migrating legacy monoliths to efficient
+          <strong>Microservices and Serverless</strong> architectures, with previous results of
+          <strong>cloud cost reductions of up to 75%</strong>. Whether architecting real-time Forex trading engines or
+          automating infrastructure via <strong>AWS CDK and Terraform</strong>, prioritizes scalability, security, and
+          Clean Architecture principles.
         </div>
-        <div class="skill-group">
-          <strong>Cloud, Infrastructure & DevOps:</strong> Amazon Web Services (<strong>AWS</strong>), Google Cloud
-          Platform (<strong>GCP</strong>), <strong>Microsoft Azure</strong>, <strong>Kubernetes (K8s)</strong>,
-          <strong>Docker</strong>, Continuous Integration/Deployment (<strong>CI/CD</strong>),
-          <strong>CircleCI</strong>, <strong>GitHub Actions</strong>, <strong>Grafana</strong>,
-          <strong>Terraform</strong>, <strong>AWS CDK</strong>.
-        </div>
-        <div class="skill-group">
-          <strong>Databases & Backend Infrastructure:</strong> <strong>MongoDB</strong>, <strong>MySQL</strong>,
-          <strong>PostgreSQL</strong>, <strong>DynamoDB</strong>, Amazon <strong>Neptune</strong> (Graph Database),
-          <strong>Prisma ORM</strong>, <strong>Redis</strong>, Virtual Private Cloud (<strong>VPC</strong>),
-          <strong>Route 53</strong>, Serverless (<strong>AWS Lambda</strong>), <strong>API Gateway</strong>,
-          <strong>ECS/Fargate</strong>.
+        <div class="summary-text">
+          Beyond backend development, highly versatile in managing both relational and non-relational data across
+          <strong>MySQL, MongoDB, and DynamoDB</strong>. Thrives in agile environments, leveraging experience in
+          <strong>Kubernetes (AKS/EKS)</strong> and CI/CD automation to accelerate delivery cycles and build resilient,
+          developer-friendly ecosystems.
         </div>
       </section>
 
@@ -190,24 +177,35 @@
         <h2>Professional Experience</h2>
 
         <div class="exp-item">
-          <div class="exp-header"><span>Senior Software Engineer</span> <span>January 2025</span> – Present</div>
-          <div class="company-info"><span>DIEGO VARUSSA PEREIRA LTDA</span> <span>Maringá, Brazil</span></div>
+          <div class="exp-header"><span>Senior Software Engineer</span> <span>January 2025 – Present</span></div>
+          <div class="company-info"><span>DIEGO VARUSSA PEREIRA LTDA</span> <span>Maringá, PR</span></div>
           <ul>
             <li>
-              Architect and engineer high-concurrency <strong>Application Programming Interfaces (API)</strong> using
-              <strong>NestJS, Apollo GraphQL, Prisma, and MongoDB</strong>.
+              Led the full lifecycle of a desktop application developed in <strong>Electron</strong>, designed to act
+              as a high-performance assistant with an in-game overlay interface.
             </li>
             <li>
-              Design and manage automated <strong>Cloud Infrastructure</strong> and <strong>DevOps</strong> pipelines on
-              <strong>Google Cloud Platform (GCP)</strong>.
+              Utilized <strong>AI-driven development methodologies</strong> to accelerate the prototyping of complex
+              features and ensure an extremely agile continuous delivery cycle.
             </li>
             <li>
-              Establish full-stack <strong>Observability</strong> and real-time performance monitoring using
-              <strong>Grafana</strong>.
+              Architected and implemented a scalable full-stack solution using <strong>NestJS</strong> and
+              <strong>Apollo GraphQL</strong> on the backend, integrated with <strong>Prisma ORM</strong> and
+              <strong>MongoDB</strong>.
             </li>
             <li>
-              Implement secure <strong>OAuth2</strong> authentication and responsive,
-              <strong>multilingual</strong> frontend architectures.
+              Developed the frontend using <strong>Vue.js 3</strong> with <strong>Quasar Framework</strong> and
+              <strong>Pinia</strong>, ensuring a multilingual, responsive, and high-performance interface.
+            </li>
+            <li>
+              Engineered a strategic infrastructure migration from <strong>Google Cloud Platform (GCP/Cloud Run)</strong>
+              to <strong>Coolify</strong>, optimizing container orchestration and resulting in a
+              <strong>75% reduction in monthly cloud costs</strong>.
+            </li>
+            <li>
+              Implemented a robust log monitoring system using <strong>Axiom</strong>, with critical alerts integrated
+              into Discord, and established secure authentication flows via <strong>OAuth2</strong> with direct
+              integration into the Discord ecosystem.
             </li>
           </ul>
         </div>
@@ -217,36 +215,49 @@
           <div class="company-info"><span>Geeklys</span> <span>Tokyo, Japan</span></div>
           <ul>
             <li>
-              <em>GameFi & Fintech:</em> Engineered <strong>Serverless</strong> architectures using
-              <strong>AWS Lambda</strong>, <strong>CDK</strong>, and <strong>Neptune</strong> for decentralized
-              platforms.
+              Revolutionized the performance of the <strong>Scholarship Matching</strong> platform by diagnosing
+              critical latency bottlenecks, implementing advanced <strong>GraphQL caching</strong> strategies, and
+              migrating services from <strong>AWS Lambda</strong> to container architecture on
+              <strong>App Runner</strong>, reducing response time from 5 minutes to 150ms
+              (<strong>99% optimization</strong>).
             </li>
             <li>
-              Developed automated financial <strong>Trading Analysis</strong> tools for FX and Cryptocurrency markets on
-              <strong>Ethereum</strong> and <strong>Binance Smart Chain (BSC)</strong>.
+              Created an <strong>AWS infrastructure</strong> for trading analysis (Forex) capable of processing hundreds
+              of events per second, using a stack based on <strong>SNS, SQS, DynamoDB, and ECS</strong>, ensuring high
+              availability and data integrity under intense transactional load.
             </li>
             <li>
-              Built scalable <strong>Microservices</strong> and <strong>Matching Engines</strong> using
-              <strong>Node.js</strong> and <strong>TypeScript</strong>.
+              Standardized resource provisioning through <strong>AWS CDK</strong> (Infrastructure as Code), ensuring the
+              entire network (<strong>VPC</strong>), security (<strong>Cognito/API Gateway</strong>), and storage
+              (<strong>S3</strong>) were managed via code, eliminating manual configuration errors.
             </li>
             <li>
-              Optimized cloud security and networking protocols (<strong>VPC</strong>, <strong>Route 53</strong>,
-              <strong>WAF</strong>, <strong>App Runner</strong>, <strong>S3</strong>) on <strong>AWS</strong>.
+              Established observability dashboards in <strong>Grafana</strong> integrated with
+              <strong>CloudWatch</strong>, allowing real-time visualization of service health metrics and immediate
+              response to failures.
             </li>
           </ul>
         </div>
 
         <div class="exp-item">
-          <div class="exp-header"><span>Infrastructure Engineer</span> <span>September 2019 – May 2020</span></div>
-          <div class="company-info"><span>ISAO Corporation</span> <span>Tokyo, Japan</span></div>
+          <div class="exp-header">
+            <span>Cloud Infrastructure Engineer</span> <span>September 2019 – May 2020</span>
+          </div>
+          <div class="company-info"><span>Colorkrew Inc.</span> <span>Tokyo, Japan</span></div>
           <ul>
             <li>
-              Optimized multi-cloud deployment strategies across <strong>AWS</strong>, <strong>Azure</strong>, and
-              <strong>Kubernetes</strong> for enterprise clients.
+              Designed and deployed <strong>Kubernetes clusters (AKS)</strong> on <strong>Microsoft Azure</strong>,
+              configuring the entire internal network topology and Ingress policies, and establishing Auto-scaling
+              rules to ensure application resilience.
             </li>
             <li>
-              Modernized legacy software architectures by implementing <strong>RESTful APIs</strong> and contemporary
-              frontend frameworks.
+              Developed modular <strong>CI/CD pipelines</strong> using <strong>Terraform</strong> and
+              <strong>Helm</strong>, enabling standardized automated deployments in multi-cloud environments
+              (<strong>Azure/AWS</strong>) and reducing friction between development and operations teams.
+            </li>
+            <li>
+              Implemented rigorous access controls, network security, and monitoring within the Kubernetes ecosystem,
+              ensuring compliance with cloud security best practices.
             </li>
           </ul>
         </div>
@@ -258,16 +269,24 @@
           <div class="company-info"><span>Mobingi, Inc.</span> <span>Tokyo, Japan</span></div>
           <ul>
             <li>
-              Developed high-availability <strong>Web APIs</strong> for
-              <em>Application Lifecycle Management (ALM)</em> cloud SaaS products.
+              Identified critical maintenance flaws in legacy billing systems and led the migration from an
+              <strong>EC2 monolith</strong> to a <strong>Microservices and Serverless (AWS Lambda)</strong>
+              architecture on demand, which <strong>reduced cloud operating costs by 40%</strong>.
             </li>
             <li>
-              Directed the architectural shift from Monoliths to <strong>Containerized Microservices</strong> on
-              <strong>AWS</strong>.
+              Architected a <strong>RESTful API Gateway</strong> under <strong>Clean Architecture</strong> principles,
+              achieving 100% integration test coverage with <strong>Postman</strong> and standardizing error contracts
+              to facilitate integration between internal services.
             </li>
             <li>
-              Built internal automation tools for <strong>Cloud Resource Orchestration</strong> using
-              <strong>Node.js</strong>.
+              Developed internal telemetry tools for <strong>Kubernetes</strong>, optimizing the debug flow and
+              <strong>increasing bug resolution speed by 60%</strong>, and implemented CI/CD pipelines via
+              <strong>AWS CodePipeline</strong> for independent deploys.
+            </li>
+            <li>
+              Performed profiling and refactoring of an <em>Application Lifecycle Management (ALM)</em> platform, using
+              clean architecture principles to identify code bottlenecks and optimize algorithms, resulting in a
+              <strong>90% reduction in API response time</strong>.
             </li>
           </ul>
         </div>
@@ -277,67 +296,72 @@
           <div class="company-info"><span>LinkPro</span> <span>Tokyo, Japan</span></div>
           <ul>
             <li>
-              Developed full-stack <strong>IoT</strong> applications for healthcare devices utilizing real-time sensor
-              data integration.
+              Developed a management platform for <strong>IoT devices</strong> equipped with sensors (temperature,
+              motion, and humidity) for elderly monitoring, using <strong>Zend Expressive</strong> and
+              <strong>Vue.js</strong> for real-time data visualization.
             </li>
             <li>
-              Built cross-platform desktop applications with <strong>Electron</strong> to interface with
-              high-performance <strong>C++</strong> processing engines.
+              Designed multi-platform applications with <strong>Electron</strong>, integrating with proprietary
+              <strong>C++</strong> image processing engines focused on sharpness and visual optimization algorithms.
             </li>
             <li>
-              Implemented high-concurrency management servers using <strong>Zend Expressive</strong> and
-              <strong>Vue.js</strong>.
+              Developed web control panels embedded directly into security camera hardware, using standard web
+              technologies (HTML/CSS/JS) for low-consumption interfaces.
             </li>
           </ul>
         </div>
 
         <div class="exp-item">
-          <div class="exp-header"><span>Software Engineer</span> <span>January 2011 – August 2015</span></div>
-          <div class="company-info">
-            <span>EC-Giken / Inove sua Escolha / Hnet</span> <span>Brazil / Japan (Remote)</span>
-          </div>
+          <div class="exp-header"><span>Software Engineer</span> <span>January 2013 – August 2015</span></div>
+          <div class="company-info"><span>EC-Giken</span> <span>Santos, São Paulo, Brazil</span></div>
           <ul>
             <li>
-              <em>Magento E-commerce Specialist:</em> Customized enterprise platforms for major retailers (<strong
-                >Amazon JP</strong
-              >, <strong>Rakuten</strong>).
+              Refactored data import processes for the <strong>Magento</strong> platform (EAV model), reducing
+              processing time from <strong>20 hours to just 20 minutes (98%)</strong> through optimized scripts and
+              database tuning.
             </li>
             <li>
-              <strong>Leadership:</strong> Promoted to <strong>Lead Programmer</strong>, responsible for team
-              management, sprints, and <strong>Code Reviews</strong>.
-            </li>
-            <li>
-              Integrated <strong>Third-Party APIs</strong> and secure payment gateways for large-scale commercial
-              deployments.
-            </li>
-            <li>
-              Engineered responsive web applications using <strong>HTML5</strong>, <strong>CSS3</strong>, and
-              <strong>jQuery</strong>.
+              Developed complex modules for <strong>Magento</strong> and <strong>Zend Framework 2</strong>, creating
+              centralized systems for automatic inventory management and product listing on
+              <strong>Amazon JP</strong> and <strong>Rakuten</strong> marketplaces.
             </li>
           </ul>
         </div>
-      </section>
 
-      <section>
-        <h2>Leadership</h2>
-        <div class="skill-group">
-          <strong>Management & Strategy:</strong> Team Mentorship, Technical Leadership, System Design, Scalable
-          Architecture Planning.
-        </div>
-      </section>
-
-      <section>
-        <h2>Education & Languages</h2>
         <div class="exp-item">
-          <div class="summary-text">
-            <strong>Specialization in Web Systems Development</strong> | Universidade Estadual de Maringá (2011 –
-            2013)<br />
-            <strong>Web Design and Programming</strong> | Universidade do Sul de Santa Catarina (2008 – 2011)
-          </div>
-          <div class="summary-text">
-            <strong>Languages:</strong> English (Professional Working Proficiency) | Portuguese (Native Proficiency)
-          </div>
+          <div class="exp-header"><span>Software Engineer</span> <span>July 2011 – November 2012</span></div>
+          <div class="company-info"><span>Inove sua Escolha</span> <span>Maringá, Paraná, Brazil</span></div>
+          <ul>
+            <li>
+              Acted as <strong>Project Leader</strong>, managing task distribution for developers and providing
+              technical mentorship to junior professionals, ensuring technical quality and team growth.
+            </li>
+            <li>
+              Led the implementation of a new base framework (<strong>PHP/CodeIgniter</strong>) with a focus on
+              security and best practices, resulting in the total eradication of breaches in legacy systems that
+              suffered recurring attacks.
+            </li>
+            <li>
+              Developed <strong>REST APIs</strong> for integration with mobile applications and managed the integration
+              of multiple payment gateways with credit card operators.
+            </li>
+          </ul>
         </div>
+
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div class="summary-text">
+          <strong>Specialization in Web Systems Development</strong>, Web — Universidade Estadual de Maringá (2011 –
+          2013)<br />
+          <strong>Web Design and Programming</strong>, Web — Universidade do Sul de Santa Catarina (2008 – 2011)
+        </div>
+      </section>
+
+      <section>
+        <h2>Languages</h2>
+        <div class="inline-list">English (Professional Working) · Portuguese (Native or Bilingual)</div>
       </section>
     </div>
   </body>

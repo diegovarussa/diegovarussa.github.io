@@ -1,0 +1,16 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Claude Code memory and project context
+.claude/
+
+# LinkedIn export — source data, not for version control
+Profile.pdf
