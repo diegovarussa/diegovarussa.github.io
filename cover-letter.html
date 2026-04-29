@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cover Letter - Diego Varussa Pereira</title>
+    <style>
+      :root {
+        --primary-color: #000000;
+        --accent-color: #003366;
+        --text-main: #222222;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+        color: var(--text-main);
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0;
+      }
+
+      .page {
+        width: 210mm;
+        margin: 0 auto;
+        background: white;
+        padding: 18mm 20mm;
+      }
+
+      .sender-block {
+        border-bottom: 2px solid var(--primary-color);
+        padding-bottom: 8px;
+        margin-bottom: 20px;
+      }
+
+      .sender-block h1 {
+        margin: 0 0 4px 0;
+        font-size: 20pt;
+        color: var(--primary-color);
+      }
+
+      .contact-bar {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        font-size: 10pt;
+        color: var(--text-main);
+      }
+
+      .contact-bar a {
+        color: var(--text-main);
+        text-decoration: none;
+      }
+
+      .meta {
+        font-size: 10pt;
+        margin-bottom: 24px;
+        color: var(--text-main);
+      }
+
+      .meta .date {
+        margin-bottom: 16px;
+      }
+
+      .meta .recipient {
+        font-weight: bold;
+        color: var(--accent-color);
+      }
+
+      .placeholder {
+        color: #c0392b;
+        font-style: italic;
+        font-weight: bold;
+      }
+
+      .body-text {
+        font-size: 10.5pt;
+        text-align: justify;
+        line-height: 1.6;
+      }
+
+      .body-text p {
+        margin: 0 0 14px 0;
+      }
+
+      .closing {
+        margin-top: 28px;
+        font-size: 10.5pt;
+      }
+
+      .closing .sign-off {
+        margin-bottom: 32px;
+      }
+
+      .closing .name {
+        font-weight: bold;
+        font-size: 11pt;
+      }
+
+      @media print {
+        .page {
+          padding: 18mm 20mm;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="sender-block">
+        <h1>Diego Varussa Pereira</h1>
+        <div class="contact-bar">
+          <span>Paraná, Brazil</span>
+          | <span>+55 44 99958-2564</span> | <span>diegovarussa@gmail.com</span> |
+          <a href="https://www.linkedin.com/in/diego-varussa" target="_blank">linkedin.com/in/diego-varussa</a>
+        </div>
+      </div>
+
+      <div class="meta">
+        <div class="date">April 29, 2026</div>
+        <div class="recipient">
+          Hiring Manager<br />
+          <span class="placeholder">[Company Name]</span>
+        </div>
+      </div>
+
+      <div class="body-text">
+        <p>Dear Hiring Manager,</p>
+
+        <p>
+          I am a Senior Software Engineer and Cloud Architect with over <strong>14 years of experience</strong> building
+          high-scale, cloud-native systems that align technical excellence with business goals. Throughout my career, I
+          have worked across diverse industries and international environments, always focused on delivering software
+          that is not only well-engineered but also impactful. I am currently looking for opportunities where I can
+          apply my expertise in backend architecture and cloud infrastructure to help your company grow and scale with
+          confidence.
+        </p>
+
+        <p>
+          My core technical foundation is built on <strong>Node.js, TypeScript, and NestJS</strong>, with broad
+          experience across <strong>AWS and Azure</strong> — including Kubernetes, serverless, Infrastructure as Code
+          (CDK, Terraform), and CI/CD pipelines. I am comfortable owning the full lifecycle of a system, from
+          architecture design and database modeling to container orchestration and observability. I also keep pace with
+          emerging technologies, currently integrating <strong>AI-driven development</strong> workflows to accelerate
+          delivery cycles.
+        </p>
+
+        <p>
+          Two achievements stand out as representative of the impact I aim to deliver. At <strong>Geeklys</strong>, I
+          diagnosed critical latency bottlenecks in a Scholarship Matching platform and led a full architectural
+          overhaul — combining advanced GraphQL caching with a container migration to AWS App Runner — that reduced
+          response time from <strong>5 minutes to 150ms, a 99% improvement</strong>. Earlier, at
+          <strong>Mobingi</strong>, I led the decomposition of a legacy billing monolith into a Microservices and
+          Serverless architecture, which <strong>cut cloud operating costs by 40%</strong> and significantly improved
+          system maintainability.
+        </p>
+
+        <p>
+          Beyond technical skills, I bring the perspective of someone who has built and shipped products end-to-end
+          across international teams in Japan and Brazil, navigating different cultures, time zones, and business
+          contexts. I am a strong communicator who can bridge engineering, and I take ownership seriously — from code
+          quality to production reliability. I would welcome the opportunity to discuss how my background can contribute
+          to your team's goals.
+        </p>
+      </div>
+
+      <div class="closing">
+        <div class="sign-off">Sincerely,</div>
+        <div class="name">Diego Varussa Pereira</div>
+      </div>
+    </div>
+
+    <script>
+      if (window.location.search.includes('print')) {
+        setTimeout(function () {
+          window.print();
+        }, 800);
+      }
+    </script>
+  </body>
+</html>
