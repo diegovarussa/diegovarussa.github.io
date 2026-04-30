@@ -43,7 +43,7 @@
         color: var(--primary-color);
       }
       .tagline {
-        font-size: 13pt;
+        font-size: 11pt;
         color: var(--accent-color);
         font-weight: bold;
         margin-top: 2px;
@@ -52,10 +52,21 @@
       .contact-bar {
         display: flex;
         justify-content: flex-start;
-        gap: 12px;
+        gap: 4px 0;
         flex-wrap: wrap;
         margin-top: 4px;
         font-size: 10pt;
+      }
+
+      .contact-bar span,
+      .contact-bar a {
+        white-space: nowrap;
+      }
+
+      .contact-sep {
+        padding: 0 6px;
+        color: var(--text-main);
+        user-select: none;
       }
 
       .contact-bar a {
@@ -77,6 +88,7 @@
         font-size: 9.8pt;
         margin-bottom: 4px;
         text-align: justify;
+        hyphens: none;
       }
 
       .exp-item {
@@ -105,6 +117,7 @@
       li {
         margin-bottom: 2.5px;
         text-align: justify;
+        hyphens: none;
       }
 
       .inline-list {
@@ -129,18 +142,20 @@
     <div class="resume-container">
       <header>
         <h1 itemprop="name">Diego Varussa Pereira</h1>
+        <div class="tagline">
+          Senior Backend Engineer | Cloud Architect | Node.js, TypeScript, Microservices | API | AWS &amp; Azure |
+          Scalable Systems
+        </div>
 
         <div class="contact-bar">
-          <span itemprop="address" itemscope itemtype="http://schema.org">
-            <span itemprop="addressRegion">Paraná</span>,
-            <span itemprop="addressCountry">Brazil</span>
-          </span>
-          | <span itemprop="telephone">+55 44 99958-2564</span> | <span itemprop="email">diegovarussa@gmail.com</span> |
-          <span
-            ><a href="https://www.linkedin.com/in/diego-varussa" target="_blank" itemprop="url"
-              >linkedin.com/in/diego-varussa</a
-            ></span
-          >
+          <span itemprop="address" itemscope itemtype="http://schema.org"
+            ><span itemprop="addressRegion">Paraná</span>, <span itemprop="addressCountry">Brazil</span></span
+          ><span class="contact-sep">·</span
+          ><span itemprop="telephone">+55 44 99958-2564</span
+          ><span class="contact-sep">·</span
+          ><span itemprop="email">diegovarussa@gmail.com</span
+          ><span class="contact-sep">·</span
+          ><a href="https://www.linkedin.com/in/diego-varussa" target="_blank" itemprop="url">linkedin.com/in/diego-varussa</a>
         </div>
       </header>
 
@@ -359,10 +374,12 @@
         <div class="inline-list">English (Professional Working) · Portuguese (Native or Bilingual)</div>
       </section>
     </div>
-  <script>
-    if (window.location.search.includes('print')) {
-      setTimeout(function () { window.print(); }, 800);
-    }
-  </script>
+    <script>
+      if (window.location.search.includes('print')) {
+        setTimeout(function () {
+          window.print();
+        }, 800);
+      }
+    </script>
   </body>
 </html>
